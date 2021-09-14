@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+:root {
+  --spacing: 1rem;
+  --margin-top: 1rem;
+}
+
 body{
   background-color: #f2f2f2;
   margin: 0 auto;
@@ -9,6 +14,7 @@ body{
 
 nav{
   background-color: black;
+  height: 3rem;
 }
 
 nav ul {
@@ -35,46 +41,46 @@ nav a{
 #home {
   height: 25rem;
   background-color: #efeae5;
-  padding: 1rem;
+  padding: var(--spacing);
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.intro-right {
-  text-align: right;
+.intro-left img{
+  justify-content: flex-start;
+  height: 50px;
 }
-.intro-right img {
-  height: 100px;
-}
-.intro-left{
-  margin-top: 10rem;
-}
-.intro-left img {
-  height: 90px;
-}
+
 
 #about {
   height: 30rem;
   display: flex;
-  margin-top: 1rem;
+  margin-top: var(--margin-top);
 }
 
 .about-left{
   flex-direction: column;
   background-color: #E4B0AE;
   width: 50%;
-  padding: 1rem;
+  padding: var(--spacing);
 }
 #projects {
   height: 25rem;
   background-color: #efeae5;
-  margin-top: 1rem;
-  padding: 1rem;
+  margin-top: var(--margin-top);
+  padding: var(--spacing);
 }
 
 #skills {
   height: 25em;
   background-color: #c3d9f1;
-  margin-top: 1rem;
-  padding: 1rem;
+  margin-top: var(--margin-top);
+  padding: var(--spacing);
 }
 
 .current-skills img, .future-skills img {
@@ -90,8 +96,8 @@ nav a{
 #contact {
   height: 25rem;
   background-color: #F6E2D8;
-  margin-top: 1rem;
-  padding: 1rem;
+  margin-top: var(--margin-top);
+  padding: var(--spacing);
   display:flex;
 }
 .contact-left{
@@ -106,11 +112,10 @@ nav a{
 
 .contact-left img{
   width:80%;
-  height: 350px;
-  margin-top: 1.5rem;
+  margin-bottom: 0;
   margin-left: 2rem;
   object-fit: cover;
-  border: 5px solid white;
+
 
 }
 
