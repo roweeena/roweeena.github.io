@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body{
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #2E2E2E;
+}
+
+nav{
+  background-color: black;
+}
+
+nav ul {
+  text-align: right;
+  padding: 10px;
+}
+nav li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+
+nav a{
+  color:white;
+}
+
+ a {
+  text-decoration: none;
+}
+
+ a:hover {
+  text-decoration: underline;
+}
+
+#home {
+  height: 25rem;
+  background-color: #efeae5;
+  padding: 1rem;
+}
+
+.intro-right {
+  text-align: right;
+}
+.intro-right img {
+  height: 100px;
+}
+.intro-left{
+  margin-top: 10rem;
+}
+.intro-left img {
+  height: 90px;
+}
+
+#about {
+  height: 30rem;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.about-left{
+  flex-direction: column;
+  background-color: #E4B0AE;
+  width: 50%;
+  padding: 1rem;
+}
+#projects {
+  height: 25rem;
+  background-color: #efeae5;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+#skills {
+  height: 25em;
+  background-color: #c3d9f1;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.current-skills img, .future-skills img {
+  width: 48px;
+  padding: 0.5rem;
+}
+.current-skills, .future-skills {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+
+#contact {
+  height: 25rem;
+  background-color: #F6E2D8;
+  margin-top: 1rem;
+  padding: 1rem;
+  display:flex;
+}
+.contact-left{
+  width: 50%;
+  padding-bottom: 2rem;
+}
+.contact-right{
+  flex-direction: column;
+  width:50%;
+
+}
+
+.contact-left img{
+  width:80%;
+  height: 350px;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  object-fit: cover;
+  border: 5px solid white;
+
+}
+
+
+.contact-right button{
+  background-color:lightblue;
+  color: #2E2E2E;
+  border-radius: 0.5em;
+  border: 1px solid white;
+  width: 5rem;
+  height: 2rem;
+}
+
+label {
+  display: block;
+}
+
+footer {
+  text-align: center;
+}
