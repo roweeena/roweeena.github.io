@@ -59,8 +59,11 @@ nav a{
 .intro-right{
   margin-left: 10rem;
 }
-
-.intro-tooltip .tooltiptext {
+.intro-buttons{
+  border: none;
+  background-color: inherit;
+}
+.intro-buttons .tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -70,11 +73,25 @@ nav a{
   padding: 5px 0;
   position: absolute;
   z-index: 2;
+  cursor: help;
 }
 
-.intro-tooltip:hover .tooltiptext {
+.intro-buttons:hover .tooltiptext {
   visibility: visible;
 }
+
+.intro-buttons:hover{
+   box-shadow:  0 2px 25px rgba(208, 184, 218, 0.7);
+   border-radius: 100%;
+   padding: 0;
+   transform: scale(1.03);
+ }
+ .intro-buttons:active{
+   box-shadow: 0 2px 25px rgba(208, 184, 218, 0.5);
+   transform: scale(.98);
+}
+
+
 
 #about {
   height: 30rem;
