@@ -56,6 +56,25 @@ nav a{
   height: 50px;
 }
 
+.intro-right{
+  margin-left: 10rem;
+}
+
+.intro-tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.intro-tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 #about {
   height: 30rem;
@@ -68,6 +87,21 @@ nav a{
   background-color: #E4B0AE;
   width: 50%;
   padding: var(--spacing);
+}
+.about-right {
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-right img {
+  display: block;
+  margin: auto;
+  margin-top: 2.5rem;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10%;
 }
 #projects {
   height: 25rem;
@@ -92,35 +126,24 @@ nav a{
   padding-right: 5rem;
 }
 
-
 #contact {
   height: 25rem;
   background-color: #F6E2D8;
   margin-top: var(--margin-top);
   padding: var(--spacing);
-  display:flex;
-}
-.contact-left{
-  width: 50%;
-  padding-bottom: 2rem;
-}
-.contact-right{
-  flex-direction: column;
-  width:50%;
-
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact-left img{
-  width:80%;
-  margin-bottom: 0;
-  margin-left: 2rem;
-  object-fit: cover;
-
-
+.contact-left {
+  margin-left: 10rem;
 }
 
-
-.contact-right button{
+.contact-left button{
   background-color:lightblue;
   color: #2E2E2E;
   border-radius: 0.5em;
