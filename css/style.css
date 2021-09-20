@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 :root {
   --spacing: 1rem;
-  --margin-top: 1rem;
+  --shadow: 0 12px 8px -8px rgba(0,0,0,0.3);
 }
 
 body{
   background-color: #f2f2f2;
   margin: 0 auto;
-  padding: 20px;
   font-family: 'Raleway', sans-serif;
   color: #2E2E2E;
 }
 
 nav{
+  box-shadow: var(--shadow);
   background-color: black;
   height: 3rem;
+  width:100%;
+  top:0;
+  position: relative;
+  z-index: 1;
+  border: 2px solid limegreen;
 }
-
 nav ul {
   text-align: right;
   padding: 10px;
@@ -28,6 +32,16 @@ nav li {
 
 nav a{
   color:white;
+}
+
+.sticky {
+  position: fixed;
+ box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
 }
 
  a {
@@ -42,6 +56,8 @@ nav a{
   height: 25rem;
   background-color: #efeae5;
   padding: var(--spacing);
+  margin: var(--spacing);
+  box-shadow: var(--shadow);
   position:relative;
   display: flex;
   flex-direction: row;
@@ -49,19 +65,25 @@ nav a{
   justify-content: center;
   align-items: center;
   text-align: center;
+  border: 2px solid limegreen;
 }
 
-.intro-left img{
+.intro-left {
+  border: 2px solid blue;
+}
+
+.intro-right img{
   justify-content: flex-start;
-  height: 50px;
 }
 
 .intro-right{
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
+  border: 2px solid purple;
 }
 .intro-buttons{
   border: none;
   background-color: inherit;
+  border: 2px solid orange;
 }
 .intro-buttons .tooltiptext {
   visibility: hidden;
@@ -91,25 +113,30 @@ nav a{
    transform: scale(.98);
 }
 
-
-
 #about {
   height: 30rem;
   display: flex;
-  margin-top: var(--margin-top);
+  margin: var(--spacing);
+  border: 2px solid limegreen;
+
 }
 
 .about-left{
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: #E4B0AE;
   width: 50%;
   padding: var(--spacing);
+box-shadow: var(--shadow);
+border: 2px solid red;
 }
 .about-right {
   width: 50%;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  border: 2px solid green;
 }
 .about-right img {
   display: block;
@@ -121,20 +148,17 @@ nav a{
   border-radius: 10%;
 }
 #projects {
-  height: 25rem;
+  height: auto;
   background-color: #efeae5;
-  margin-top: var(--margin-top);
+  margin: var(--spacing);
   padding: var(--spacing);
+  box-shadow: var(--shadow);
+  border: 2px solid limegreen;
 }
 .projects {
-  overflow-x: scroll;
-  user-select: none;
-  cursor: pointer;
-  transition: all 0.2s;
-  transform: scale(0.98);
-  will-change: transform;
   position: relative;
   display: flex;
+  border: 2px solid teal;
 }
 .card {
   margin-top: 1rem;
@@ -143,6 +167,7 @@ nav a{
   display: block;
   align-items: center;
   justify-content: center;
+  border: 2px solid magenta;
 }
 
 .card img{
@@ -152,11 +177,24 @@ nav a{
   box-shadow: inset 0 0 0 10px
 }
 
+.card button{
+  background-color: black;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
+.card button:active{
+  box-shadow: 0 2px 25px rgba(208, 184, 218, 0.8);
+  transform: scale(.98);
+}
 #skills {
   height: 25em;
   background-color: #c3d9f1;
-  margin-top: var(--margin-top);
+  margin: var(--spacing);
   padding: var(--spacing);
+    box-shadow: var(--shadow);
+    border: 2px solid limegreen;
 }
 
 .current-skills img, .future-skills img {
@@ -171,18 +209,15 @@ nav a{
 #contact {
   height: 25rem;
   background-color: #F6E2D8;
-  margin-top: var(--margin-top);
+  margin: var(--spacing);
   padding: var(--spacing);
+    box-shadow: var(--shadow);
   position:relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-
-.contact-left {
-  margin-left: 10rem;
 }
 
 .contact-left button{
@@ -200,4 +235,44 @@ label {
 
 footer {
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  html{
+    width:100%;
+  }
+  #home{
+    margin-top: var(--spacing);
+    height: auto;
+    display: flex;
+  }
+  .intro-right {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro-left img{
+    width: 70px;
+  }
+  .intro-right img, .contact-right img{
+    width: 60%;
+  }
+
+  #about, #contact{
+    width: auto;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+  }
+
+  .about-left{
+  width:100%;
+  }
+  .about-right  {
+    width: 100%;
+  }
+  .about-right img {
+    width: 70%;
+  }
 }
