@@ -17,4 +17,7 @@ $(window).scroll(function(){
   stickyNav();
 });
 
+
+$(".card").flip();
+
 })
