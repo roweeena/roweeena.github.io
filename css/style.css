@@ -65,6 +65,7 @@ nav a{
 
  a:hover {
   text-decoration: underline;
+  text-decoration-color:  rgb(148,187,233);
 }
 
 #home {
@@ -167,22 +168,34 @@ nav a{
   grid-template-columns: repeat(2, 1fr);
 }
 
-.card {
+ .card {
   margin: var(--spacing);
   padding: var(--spacing);
   border: 1.5px solid #ccc;
 	box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.8);
-  max-width: 500px;
+  width: 800px;
+  height: 25rem;
   flex-grow: 0.25;
-  text-align: center;
   box-shadow: 8px 12px 8px -8px rgba(0,0,0,0.3);
+  justify-content: center;
+  text-align: center;
 }
 
- .card> img{
-  width: 400px;
-  height: 300px;
+.front {
+  margin-left: -1rem;
+}
+
+ .front > img{
+  width: 300px;
+  height: 200px;
   object-fit: cover;
+}
+
+.back > p{
+  margin-top: 30%;
+  vertical-align: middle;
+  width: 90%;
 }
 
 .card button{
@@ -241,6 +254,10 @@ nav a{
 .current-skills img, .future-skills img {
   width: 48px;
   padding: 0.5rem;
+  filter: grayscale(100%);
+}
+.current-skills> img:hover, .future-skills> img:hover {
+  filter:none;
 }
 .current-skills, .future-skills {
   padding-left: 5rem;
@@ -278,14 +295,21 @@ nav a{
   color:white;
 }
 
-label {
-  display: block;
+span {
+  font-weight: bold;
+
 }
 
-input, textarea{
-  width: 100%;
-  font-family: 'Raleway', sans-serif;
-  margin-bottom: 10px;
+#email img{
+  transition: all .2s ease-in-out;
+}
+
+#email:hover img {
+  transform: scale(1.5);
+}
+
+.contact-left img {
+  width: 15px;
 }
 
 footer {
@@ -341,6 +365,7 @@ footer {
       margin: 0 auto;
       max-width: 300px;
       grid-template-columns: auto;
+      justify-content: center;
     }
 
     .card {
@@ -349,7 +374,7 @@ footer {
       max-width: 300px;
     }
 
-    .card > img{
+    .front > img{
       max-width: 200px;
       height: auto;
       object-fit: contain;
@@ -363,9 +388,6 @@ footer {
       align-items: center;
     }
 
-    form{
-      margin: var(--spacing);
-    }
   }
 
   @media (min-width: 800px) {
@@ -376,6 +398,7 @@ footer {
     }
     nav li {
       padding: 0 10px;
+      font-size: 18px;
     }
     .intro-right {
       flex-direction: column-reverse;
@@ -410,14 +433,23 @@ footer {
     .projects {
       display: grid;
       margin: 0 auto;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       max-width: 600px;
+      justify-content: center;
     }
 
     .card {
       margin: var(--spacing);
       padding: var(--spacing);
-      max-width: 400px;
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+    }
+
+    .current-skills, .future-skills {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
     }
   }
 
@@ -425,21 +457,28 @@ footer {
     body {
       min-width: 1200px;
     }
-    nav li {
-      padding: 0 10px;
-    }
-    .projects {
-      max-width: 1200px;
-    }
-     .card> img{
-      width: 400px;
-      height: 200px;
-      object-fit: contain;
-    }
+
     #home, #about, #contact {
       display:grid;
       grid-template-columns: auto auto;
     }
+
+    .projects {
+      display: grid;
+      margin: 0 auto;
+      grid-gap: 1rem;
+      max-width: 1200px;
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+
+     .card {
+      margin: var(--spacing);
+      padding: var(--spacing);
+
+      max-width: 500px;
+    }
+
 
     .about-left img {
       width: 50%;

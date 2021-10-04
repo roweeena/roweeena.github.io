@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="js/jquery.js" charset="utf-8"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.11/dist/jquery.flip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
   <script src="js/main.js" charset="utf-8"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="img/Personal Logo.png" sizes="60x60">
@@ -76,32 +78,72 @@
       <h2>Projects</h2>
       <div class="projects">
         <div class="card">
-          <img src="img/project0.png" alt="">
-          <h3><strong>Tic Tac Toe</strong></h3>
-          <button class="source-code"><a href="https://github.com/roweeena/ga-project0" target="_blank">Source Code</a></button>
-          <button class="live-demo"><a href="https://roweeena.github.io/ga-project0/" target="_blank">Live Demo</a></button>
-          <p>My take on the classic game, designed to be played with two people. The users can click on their desired icon and the application keeps track of their score.</p>
+          <div class="front">
+            <img src="img/project0.png" alt="">
+            <h3><strong>Tic Tac Toe</strong></h3>
+            <button class="source-code"><a href="https://github.com/roweeena/ga-project0" target="_blank">Source Code</a></button>
+            <button class="live-demo"><a href="https://roweeena.github.io/ga-project0/" target="_blank">Live Demo</a></button>
+            <p>Click to find out more</p>
+          </div>
+          <div class="back">
+            <p>My take on the classic game, designed to be played with two people. The users can click on their desired icon and the application keeps track of their score.  <br>
+            <strong>...</strong>
+            <br>
+            Tech Stack: <strong>jQuery, JavaScript</strong>
+              </p>
+          </div>
         </div>
-        <div class="card">
+        <div class=" card">
+          <div class="front">
           <img src="img/project1.png" alt="">
           <h3>Fukuzatsu</h3>
           <button class="source-code"><a href="https://github.com/roweeena/project-1" target="_blank">Source Code</a></button>
           <button class="live-demo"><a href="https://fukuzatsu-project1.herokuapp.com/" target="_blank">Live Demo</a></button>
-          <p>A P2P marketplace website that allows users to sell their pre-loved clothes. Users can sell or buy items by adding them to their cart and checking out.</p>
+          <p>Click to find out more</p>
+
         </div>
-        <div class="card">
+        <div class="back">
+          <p>A P2P marketplace website that allows users to sell their pre-loved clothes. Users can sell or buy items by adding them to their cart and checking out.
+            <br>
+          <strong>...</strong>
+          <br>
+          Tech Stack: <strong>Ruby on Rails, Javascript, Cloudinary</strong>
+            </p>
+        </div>
+      </div>
+      <div class=" card">
+        <div class="front">
           <img src="img/project2.png" alt="">
           <h3>RPG Character Generator</h3>
           <button class="source-code"><a href="https://github.com/roweeena/project2" target="_blank">Source Code</a></button>
           <button class="live-demo"><a href="https://roweeena.github.io/project2/#/" target="_blank">Live Demo</a></button>
-          <p>This project uses an API that generates items and accessories from the online RPG game, MapleStory, and allows users to create and customise their own MapleStory character.</p>
+          <p>Click to find out more</p>
+        </div>
+        <div class="back">
+          <p>This project uses an API that generates items and accessories from the online RPG game, MapleStory, and allows users to create and customise their own MapleStory character.
+            <br>
+        <strong>...</strong>
+        <br>
+        Tech Stack: <strong>React, Ruby on Rails</strong>
+          </p>
+          </div>
         </div>
         <div class="card">
-          <img src="img/project3.png" alt="">
-          <h3>Road trip planner</h3>
-          <button class="source-code"><a href="https://github.com/roweeena/traveller-frontend" taget="_blank">Source Code</a></button>
-          <button class="live-demo"><a href="https://agitated-einstein-cc3aa7.netlify.app/" target="_blank">Live Demo</a></button>
-          <p>Designed with travelling after lockdown in mind, I wanted this app to be an all-in- one planner where groups of friends could plan a road trip. Features include a to- do checklist, directions on how to get your destination with Google Maps, and a cost calculator so you can divide expenses once the trip is over.</p>
+          <div class="front">
+            <img src="img/project3.png" alt="">
+            <h3>Road trip planner</h3>
+            <button class="source-code"><a href="https://github.com/roweeena/traveller-frontend" taget="_blank">Source Code</a></button>
+            <button class="live-demo"><a href="https://agitated-einstein-cc3aa7.netlify.app/" target="_blank">Live Demo</a></button>
+              <p>Click to find out more</p>
+          </div>
+          <div class="back">
+            <p>Designed with travelling after lockdown in mind, I wanted this app to be an all-in- one planner where groups of friends could plan a road trip. Features include a to- do checklist, directions on how to get your destination with Google Maps, and a cost calculator so you can divide expenses once the trip is over.
+              <br>
+        <strong>...</strong>
+        <br>
+        Tech Stack: <strong>Ruby on Rails, Firebase, Google Maps Api, Vue.js</strong>
+          </p>
+          </div>
         </div>
     </div>
   </section>
@@ -112,8 +154,7 @@
         <img src="img/icons8-html-5.svg" alt="">
         <img src="img/icons8-css3.svg" alt="">
         <img src="img/icons8-javascript.svg" alt="">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
-
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg">
         <img src="img/icons8-ruby-programming-language.svg" alt="">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
@@ -145,19 +186,9 @@
     </div>
     <div class="contact-left">
       <h2>Let's connect!</h2>
-      <form action="">
-        <label>
-         <input type="text" placeholder="Name">
-        </label>
-        <label>
-        <input type="text" placeholder="Email">
-        </label>
-        <label>
-          <textarea name="name" rows="8" cols="60"  placeholder="Name"></textarea>
-        </label>
-        <button>Submit</button>
-      </form>
-        <p>Or you can find out more through my <a href="https://www.linkedin.com/in/rowena-leung-204142161/" target="_blank">LinkedIn</a> or <a href="https://github.com/roweeena/" target="_blank">Github</a>!</p>
+
+        <p>Send me an email to <span id="email">roe0320@gmail.com <img src="img/ftmail-new.svg" alt=""></span>.
+          <br>Or you can find out more about me through <a href="https://www.linkedin.com/in/rowena-leung-204142161/" target="_blank">LinkedIn</a> or <a href="https://github.com/roweeena/" target="_blank">Github</a>!</p>
     </div>
 
   </section>
