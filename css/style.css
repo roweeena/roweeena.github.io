@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
 :root {
   --spacing: 1rem;
   --shadow: 0 12px 8px -8px rgba(0,0,0,0.3);
@@ -124,15 +125,15 @@ nav a{
   margin: var(--spacing);
 }
 
-.about-left{
+.about-right{
   flex-direction: row;
   flex-wrap: wrap;
   background-color: rgba(148,187,233,0.4);
   width: 50%;
-  padding: var(--spacing);
-box-shadow: var(--shadow);
+  padding: 2rem;
+  box-shadow: var(--shadow);
 }
-.about-right {
+.about-left {
   width: 50%;
   flex-direction: column;
   flex-wrap: wrap;
@@ -140,14 +141,14 @@ box-shadow: var(--shadow);
   align-items: center;
 
 }
-.about-right img {
+.about-left img {
+  box-shadow: var(--shadow);
   display: block;
   margin: auto;
   margin-top: 2.5rem;
   width: 50%;
   height: auto;
   object-fit: cover;
-  border-radius: 10%;
 }
 #projects {
   height: auto;
@@ -158,35 +159,78 @@ box-shadow: var(--shadow);
 
 }
 .projects {
-  position: relative;
-  display: flex;
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 1rem;
+  max-width: 1200px;
+  grid-template-columns: repeat(2, 1fr);
+
 }
+
+
 .card {
-  margin-top: 1rem;
-  flex-basis: 40%;
+  margin: var(--spacing);
+  padding: var(--spacing);
+  border: 1.5px solid #ccc;
 	box-sizing: border-box;
-  display: block;
-  align-items: center;
-  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 500px;
+  flex-grow: 0.25;
+  text-align: center;
+  box-shadow: 8px 12px 8px -8px rgba(0,0,0,0.3);
 
 }
 
-.card img{
-  width: 40%;
-  height: auto;
-  border: 1px solid white;
-  box-shadow: inset 0 0 0 10px
+ .card> img{
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: inset 0 0 0 10px;
 }
 
 .card button{
-  background-color: black;
-  color: #fff;
-  border-radius: 1rem;
-  padding: 5px;
+  background-color: white;
+  color: black;
+  border-radius: 0.5rem;
+  padding: 7px;
+}
+
+.source-code{
+  align-items: flex-start;
+  border: 2px solid rgb(148,187,233);
+}
+
+.source-code a{
+  color: black;
+}
+.source-code:hover {
+  background-color: rgb(148,187,233);
+  color:white;
+}
+
+.source-code a:hover {
+  text-decoration: none;
+  color: white
+}
+
+.live-demo {
+  align-items: flex-end;
+  border: 2px solid rgb(235,203,241);
+}
+.live-demo a{
+  color: black;
+}
+.live-demo:hover {
+  background-color: rgb(235,203,241);
+  color: white;
+}
+
+.live-demo a:hover {
+  text-decoration: none;
+  color: white
 }
 
 .card button:active{
-  box-shadow: 0 2px 25px rgba(208, 184, 218, 0.8);
   transform: scale(.98);
 }
 #skills {
@@ -221,16 +265,30 @@ box-shadow: var(--shadow);
 }
 
 .contact-left button{
-  background-color:lightblue;
+  background-color:white;
   color: #2E2E2E;
   border-radius: 0.5em;
-  border: 1px solid white;
+  border: 1px solid lightblue;
   width: 5rem;
   height: 2rem;
+  vertical-align: middle;
+  font-family: 'Raleway', sans-serif;
+  justify-content:center;
+}
+
+.contact-left button:hover {
+  background-color:lightblue;
+  color:white;
 }
 
 label {
   display: block;
+}
+
+input, textarea{
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10px;
 }
 
 footer {
@@ -275,4 +333,7 @@ footer {
   .about-right img {
     width: 70%;
   }
-}
+
+  @media screen and (max-width: 400px) {
+
+  }
