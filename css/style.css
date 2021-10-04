@@ -292,7 +292,7 @@ footer {
 }
 
 /* FOR RESPONSIVENESS  */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   html{
     width:100%;
   }
@@ -327,20 +327,14 @@ footer {
 
   .about-right img {
     width: 70%;
-  }
+  } */
 
-  @media screen and (max-width: 400px) {
-
-    body {
-      max-width: 400px;
-    }
+  @media screen and (max-width: 375px) {
     nav li {
       padding: 0 5px;
       font-size: 12px;
     }
-
     #home{
-      margin-top: var(--spacing);
       height: auto;
       display: flex;
     }
@@ -355,22 +349,26 @@ footer {
     .intro-right img, .contact-right img{
       width: 60%;
     }
+    .intro-right img {
+      margin-left: 5rem;
+    }
 
     #about, #contact, #skills, #projects{
       height:auto;
       display:flex;
       flex-direction: column;
-      width:100%;
     }
 
     .about-right {
       display:flex;
-      width:80%;
+      width:auto;
     }
 
     .about-left img {
-      width: 70%;
+      width: 90%;
       margin-bottom: 2rem;
+      justify-content: center;
+      align-items: center;
     }
 
     .projects {
@@ -393,8 +391,14 @@ footer {
     }
 
     .current-skills, .future-skills {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
       margin-left: 0.5rem;
       justify-content: center;
       align-items: center;
+    }
+
+    form{
+      margin: var(--spacing);
     }
   }
