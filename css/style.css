@@ -28,13 +28,13 @@ nav{
   margin-top: 0;
 }
 .nav-logo {
-  position: absolute;
+position: absolute;
 left: 10px;
-height: 3em;
+height: 3.5em;
 }
 
 .nav-logo img{
-  width: 25%;
+  width: 27%;
 }
 
 nav ul {
@@ -182,6 +182,10 @@ nav a{
   text-align: center;
 }
 
+.card:hover{
+  cursor:pointer;
+}
+
 .front {
   margin-left: -1rem;
 }
@@ -196,6 +200,11 @@ nav a{
   margin-top: 30%;
   vertical-align: middle;
   width: 90%;
+}
+
+.front > p:hover {
+  text-decoration: underline;
+  cursor:pointer;
 }
 
 .card button{
