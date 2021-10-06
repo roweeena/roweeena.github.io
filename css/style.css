@@ -105,8 +105,25 @@ nav a{
   z-index: 2;
   cursor: help;
 }
+.skills >.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  z-index: 1;
+  margin: -1rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  cursor: help;
+}
 
 .intro-buttons:hover .tooltiptext {
+  visibility: visible;
+}
+.skills:hover > .tooltiptext {
   visibility: visible;
 }
 
@@ -260,12 +277,12 @@ nav a{
   box-shadow: var(--shadow);
   }
 
-.current-skills img, .future-skills img {
+.skills img {
   width: 48px;
   padding: 0.5rem;
   filter: grayscale(100%);
 }
-.current-skills> img:hover, .future-skills> img:hover {
+.skills> img:hover {
   filter:none;
 }
 .current-skills, .future-skills {
@@ -380,7 +397,7 @@ footer {
     .card {
       margin: var(--spacing);
       padding: var(--spacing);
-      max-width: 300px;
+      max-width: 325px;
     }
 
     .front > img{
@@ -482,16 +499,13 @@ footer {
       grid-gap: 1rem;
       max-width: 1200px;
       grid-template-columns: repeat(2, 1fr);
-
     }
 
      .card {
       margin: var(--spacing);
       padding: var(--spacing);
-
       max-width: 500px;
     }
-
 
     .about-left img {
       width: 50%;

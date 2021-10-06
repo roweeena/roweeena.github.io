@@ -83,5 +83,12 @@ $(document).ready(function () {
 	// start animation
 	playAnim();
 
+
+	//icons on hover, add class of tooltiptext
+
+	// $('.current-skills').on('mouseover', function(){
+	// 	$('img').addClass('.tooltiptext')
+	// })
+
 	//end document ready
 });
