@@ -214,9 +214,8 @@ nav a{
 }
 
 .back > p{
-  margin-top: 30%;
+  margin-top: 20%;
   vertical-align: middle;
-  width: 90%;
 }
 
 .front > p:hover {
@@ -406,6 +405,10 @@ footer {
       object-fit: contain;
     }
 
+    .back > p {
+      width: 85%;
+    }
+
     .current-skills, .future-skills {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -464,6 +467,10 @@ footer {
       justify-content: center;
     }
 
+    .back > p{
+      padding: 35px;
+    }
+
     .card {
       margin: var(--spacing);
       padding: var(--spacing);
@@ -506,6 +513,7 @@ footer {
       padding: var(--spacing);
       max-width: 500px;
     }
+
 
     .about-left img {
       width: 50%;
