@@ -82,19 +82,5 @@ $(document).ready(function () {
 	};
 	// start animation
 	playAnim();
-	// $('a[href^="#"]').on('click',function (e) {
-	//     e.preventDefault();
-	// 		console.log('hello');
-	//     var target = this.hash;
-	//     var $trget = $(target);
-	//     // Example: your header is 70px tall.
-	//     var newTop = $trget.offset().top - 80;
-	//     $('html, body').animate ({
-	//         scrollTop: newTop
-	//     }, 500, 'swing', function () {
-	//         window.location.hash = target;
-	//     });
-	// });
-
 	//end document ready
 });
