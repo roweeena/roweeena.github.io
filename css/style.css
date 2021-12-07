@@ -5,11 +5,23 @@
   --shadow: 0 12px 8px -8px rgba(0,0,0,0.3);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: white;
   margin: 0 auto;
   font-family: 'Raleway', sans-serif;
   color: #2E2E2E;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 .navbar{
@@ -277,9 +289,10 @@ nav a{
   }
 
 .skills img {
-  width: 48px;
+  width: 90px;
   padding: 0.5rem;
   filter: grayscale(100%);
+
 }
 .skills> img:hover {
   filter:none;
@@ -341,6 +354,9 @@ footer {
   text-align: center;
 }
 
+section, header {
+  scroll-margin-top: 90px;
+}
 /* FOR RESPONSIVENESS  */
 
   @media (min-width: 375px) {
